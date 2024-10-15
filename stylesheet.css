@@ -90,12 +90,13 @@ text-decoration: none;
 
 .text-overlay {
   position: absolute;
-  left: 40px; 
-  bottom: 0px; 
-  width: 40%; 
-  z-index: 3PX;
+  left: 40px;
+  bottom: 0px;
+  width: 40%;
+  z-index: 8;
+  margin-left: 67px;
   color: white;
-  margin-bottom: 1px;
+  margin-bottom: 44px;
 }
 
 .text-overlay span {
