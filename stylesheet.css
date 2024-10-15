@@ -17,7 +17,6 @@ overflow: hidden;
 display: flex;
 justify-content: left;
 align-items: center;
-padding: 10px 20px;
 background-color: white;
 font-size:  20px;
 width: 100%;
@@ -76,10 +75,10 @@ gap: 25px;
 text-align: justify;
 font-size: 100%;
 font-weight: 700;
-
-
 }
-
+.header-icons span{
+text-decoration: none;
+}
 .slider {
   position: relative;
   width: 70%;
@@ -675,6 +674,7 @@ footer {
   max-width: 1200px;
   margin: 10px auto;
   padding: 15px auto;
+  text-align: left;
 }
 
 .footer-about,
