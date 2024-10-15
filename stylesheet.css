@@ -4,34 +4,59 @@ body {
     padding: 0;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    background-color: #fff;
-    padding: 3px 0;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    
-}
-nav a:hover {  
-    color: blue;
 
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  overflow: hidden;
+}
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  font-size:  20px;
+  width: 100%;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+
+}
+.section1 {
+  margin-left: -95px;
+  margin-right: -60px;
+  border-radius: 5px;
+}
+
+.logo .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-container{
+  max-width: 1195px;
+
+}
+.navbar a:hover {  
+    color: blue;
 }  
 
 .logo img {
-    max-width: 90px; 
+    max-width: 110px; 
     max-height: 80px; 
     position: relative;
-    margin-left: 200px;
+    margin-left: 130px;
 }
 
 .nav-links{
     list-style: none;
     display: flex;
     gap: 30px; 
-    margin-left: 10px; 
-    padding-right: 500px;
-
+    margin-left: -10px; 
+    padding-right: 3px;
 }
 
 .nav-links a {
@@ -39,7 +64,20 @@ nav a:hover {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    gap: 5px;
+    gap: 20px;
+}
+
+
+.header-icons {
+  display: flex;
+  justify-items: right;
+  padding-left: 200px;
+  gap: 25px;
+  text-align: justify;
+  font-size: 100%;
+  font-weight: 700;
+  
+
 }
 
 .slider {
@@ -89,12 +127,15 @@ nav a:hover {
 }
 
  .meta-info {
-    padding-left:  45%;;
+    padding-top: 2%;
+    border-radius: 50%;
     gap: 20px;
-    align-items: right;
-    position: relative;
+    position: absolute;
+    right: 20px;
     font-size: 16px;
     font-weight: 500;
+    z-index: 3;
+    border-radius: 50%;
 }
 
 .text-overlay .meta-info span {
@@ -103,51 +144,30 @@ nav a:hover {
     font-size: 14px;
 }
 
-.meta-info img {
-    display: flex;
-    flex-direction: column;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-    padding-bottom: 10px;
-}
-.meta-images {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    display: flex;
-    flex-direction: column; 
-       z-index: 3;
-    
-}
-
-.meta-images img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px; 
-    border-radius: 50%; 
-    object-fit: cover;
-    border: 2px solid white; 
+.meta-info img {  
+ display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgb(249, 249, 249);
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .slides {
-    display: flex; 
-    width: 500%;
-    height: 100%;
-    animation: slideChange 20s; 
-}
-
-.slide {
-    flex: 1 0 20%; 
+    flex: 1 0 100%; 
     width: 100%; 
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: slideChange 5s; 
+
 }
 
-.slide-image {
+.slides .slide-image {
+  position: absolute;
+  left: 30px;
     width: 100%;
     height: 100%; 
     border-radius: 10px;
@@ -256,7 +276,7 @@ nav a:hover {
 
   font-size: 24px;
   font-weight: bold;
-  margin-left: 85px;
+  margin-left: 55px;
 }
 
 
@@ -323,6 +343,12 @@ nav a:hover {
 }
 
 /* Blog list styling */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1450px;
+}
 .blog-list {
   margin: 50px 50px;
   display: flex;
@@ -351,6 +377,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 40px;
 }
 
 .fashion-item {
@@ -378,60 +405,128 @@ nav a:hover {
 
 /* Join Us Section */
 .join-us {
-  margin-top: 30px;
+  margin-top: 40px;
+  
+}
+.social-media h3 {
+  font-size: 20px;
+ font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .social-media a {
-  display: flexbox;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
   color: #fff;
   text-decoration: none;
+  margin-top: 40px;
   background: linear-gradient(to right, rgb(200, 36, 140), blue);  
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
+   padding: 20px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 /* Cosmetics Section */
 .cosmetics-section {
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.view-all {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
 }
 
 .cosmetics-item {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
+  margin-bottom: 10px;
 }
 
-.cosmetics-item-title {
-  font-size: 18px;
+.item-number {
+  font-size: 1.5rem;
   font-weight: bold;
+  color: #000;
+  margin-right: 15px;
 }
 
-.cosmetics-item-date {
-  font-size: 12px;
-  color: #888;
+.item-content {
+  flex-grow: 1;
+}
+
+.item-title {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.item-date {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 0;
 }
 
 /* Categories Section */
+
 .categories-section {
-  margin-top: 20px;
+  margin-top: 80px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.categories ul {
-  list-style: disc;
-  padding-left: 20px;
+.category-item:hover {
+  background-color: #f0f0f0;
+  transform: translateX(5px);
+}
+.category-item:hover {
+cursor: pointer;
 }
 
-.categories ul li {
-  background-color: #ccc;
-  max-width: 100px;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
+.category-item {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #a6a0a0;
+    border-radius: 8px;
+    font-weight: bold;
+
+    transition: all 0.3s;
+    
+}
+.category-count {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 8px 8px;
+  border-radius: 50px;
+  font-weight: bold;
+
 }
 
 /* Adjust margins and gaps for better spacing */
@@ -457,8 +552,11 @@ nav a:hover {
 
 .cards {
   display: flex;
+  justify-content: center; 
   gap: 20px;
-  overflow-x: auto;
+  overflow-x: clip;
+  content-visibility: inherit;
+  
 }
 
 .card {
@@ -471,14 +569,13 @@ nav a:hover {
 
 .card img {
   width: 100%;
-  height: 200px;
+  max-height: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  object-fit: cover;
 }
 
 .content {
-  padding: 15px;
+  padding: 20px;
 }
 
 .content span {
@@ -496,9 +593,7 @@ nav a:hover {
   font-size: 14px;
   color: #555;
 }
-/* 
-,,,footer .. */
-  
+
 
 .category-1 {
   margin-bottom: 40px;
@@ -513,7 +608,7 @@ nav a:hover {
 .category-1 .cards {
   display: flex;
   gap: 20px;
-  overflow-x: auto;
+  overflow-x: clip;
 }
 
 .category-1 .card {
@@ -551,6 +646,7 @@ nav a:hover {
   font-size: 14px;
   color: #555;
 }
+
 .view-more {
   display: inline-block;
   margin-left: 90px;
@@ -576,6 +672,9 @@ nav a:hover {
 .footer-container {
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 15px auto;
 }
 
 .footer-about,
